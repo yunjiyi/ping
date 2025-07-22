@@ -20,7 +20,7 @@ app.use((req, res, next) => {
 // 🚧 限速中间件：应用于 /ping 路由，但在 CORS之后
 const limiter = rateLimit({
   windowMs: 60 * 1000,
-  max: 10,
+  max: 6,
   standardHeaders: true,
   legacyHeaders: false
 });
