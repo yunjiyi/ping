@@ -1,170 +1,86 @@
 {
-  "Canada": {
-    "US": {
-      "expectedRTT": 64,
-      "tolerance": 60
-    }
+  "CA": {
+    "US": { "expectedRTT": 64, "tolerance": 60 }
   },
-  "USA": {
-    "US": {
-      "expectedRTT": 60,
-      "tolerance": 60
-    }
+  "US": {
+    "US": { "expectedRTT": 60, "tolerance": 60 }
   },
-  "Chile": {
-    "US": {
-      "expectedRTT": 146,
-      "tolerance": 60
-    }
+  "CL": {
+    "US": { "expectedRTT": 146, "tolerance": 60 }
   },
-  "Brazil": {
-    "US": {
-      "expectedRTT": 229,
-      "tolerance": 100
-    }
+  "BR": {
+    "US": { "expectedRTT": 229, "tolerance": 100 }
   },
-  "Morocco": {
-    "US": {
-      "expectedRTT": 161,
-      "tolerance": 100
-    }
+  "MA": {
+    "US": { "expectedRTT": 161, "tolerance": 100 }
   },
-  "Spain": {
-    "US": {
-      "expectedRTT": 150,
-      "tolerance": 100
-    }
+  "ES": {
+    "US": { "expectedRTT": 150, "tolerance": 100 }
   },
-  "UK": {
-    "US": {
-      "expectedRTT": 133,
-      "tolerance": 60
-    }
+  "GB": {
+    "US": { "expectedRTT": 133, "tolerance": 60 }
   },
-  "France": {
-    "US": {
-      "expectedRTT": 133,
-      "tolerance": 60
-    }
+  "FR": {
+    "US": { "expectedRTT": 133, "tolerance": 60 }
   },
-  "Netherlands": {
-    "US": {
-      "expectedRTT": 138,
-      "tolerance": 60
-    }
+  "NL": {
+    "US": { "expectedRTT": 138, "tolerance": 60 }
   },
-  "Norway": {
-    "US": {
-      "expectedRTT": 151,
-      "tolerance": 100
-    }
+  "NO": {
+    "US": { "expectedRTT": 151, "tolerance": 100 }
   },
-  "Switzerland": {
-    "US": {
-      "expectedRTT": 159,
-      "tolerance": 100
-    }
+  "CH": {
+    "US": { "expectedRTT": 159, "tolerance": 100 }
   },
-  "Germany": {
-    "US": {
-      "expectedRTT": 139,
-      "tolerance": 60
-    }
+  "DE": {
+    "US": { "expectedRTT": 139, "tolerance": 60 }
   },
-  "Austria": {
-    "US": {
-      "expectedRTT": 161,
-      "tolerance": 100
-    }
+  "AT": {
+    "US": { "expectedRTT": 161, "tolerance": 100 }
   },
-  "Romania": {
-    "US": {
-      "expectedRTT": 176,
-      "tolerance": 100
-    }
+  "RO": {
+    "US": { "expectedRTT": 176, "tolerance": 100 }
   },
-  "Turkey": {
-    "US": {
-      "expectedRTT": 216,
-      "tolerance": 100
-    }
+  "TR": {
+    "US": { "expectedRTT": 216, "tolerance": 100 }
   },
-  "Cyprus": {
-    "US": {
-      "expectedRTT": 206,
-      "tolerance": 100
-    }
+  "CY": {
+    "US": { "expectedRTT": 206, "tolerance": 100 }
   },
-  "Israel": {
-    "US": {
-      "expectedRTT": 200,
-      "tolerance": 100
-    }
+  "IL": {
+    "US": { "expectedRTT": 200, "tolerance": 100 }
   },
-  "UAE": {
-    "US": {
-      "expectedRTT": 239,
-      "tolerance": 100
-    }
+  "AE": {
+    "US": { "expectedRTT": 239, "tolerance": 100 }
   },
-  "Iran": {
-    "US": {
-      "expectedRTT": 229,
-      "tolerance": 100
-    }
+  "IR": {
+    "US": { "expectedRTT": 229, "tolerance": 100 }
   },
-  "India": {
-    "US": {
-      "expectedRTT": 211,
-      "tolerance": 100
-    }
+  "IN": {
+    "US": { "expectedRTT": 211, "tolerance": 100 }
   },
-  "Bangladesh": {
-    "US": {
-      "expectedRTT": 232,
-      "tolerance": 100
-    }
+  "BD": {
+    "US": { "expectedRTT": 232, "tolerance": 100 }
   },
-  "Thailand": {
-    "US": {
-      "expectedRTT": 201,
-      "tolerance": 100
-    }
+  "TH": {
+    "US": { "expectedRTT": 201, "tolerance": 100 }
   },
-  "Singapore": {
-    "US": {
-      "expectedRTT": 178,
-      "tolerance": 100
-    }
+  "SG": {
+    "US": { "expectedRTT": 178, "tolerance": 100 }
   },
-  "South Korea": {
-    "US": {
-      "expectedRTT": 141,
-      "tolerance": 60
-    }
+  "KR": {
+    "US": { "expectedRTT": 141, "tolerance": 60 }
   },
-  "Japan": {
-    "US": {
-      "expectedRTT": 107,
-      "tolerance": 60
-    }
+  "JP": {
+    "US": { "expectedRTT": 107, "tolerance": 60 }
   },
-  "Australia": {
-    "US": {
-      "expectedRTT": 221,
-      "tolerance": 100
-    }
+  "AU": {
+    "US": { "expectedRTT": 221, "tolerance": 100 }
   },
-  "Taiwan": {
-    "US": {
-      "expectedRTT": 136,
-      "tolerance": 60
-    }
+  "TW": {
+    "US": { "expectedRTT": 136, "tolerance": 60 }
   },
-  "China": {
-    "US": {
-      "expectedRTT": 142,
-      "tolerance": 60
-    }
+  "CN": {
+    "US": { "expectedRTT": 142, "tolerance": 60 }
   }
 }
