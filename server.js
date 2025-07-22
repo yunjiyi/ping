@@ -22,7 +22,7 @@ app.use((req, res, next) => {
 // 🚧 限速中间件（仅用于 /ping 路径）
 const limiter = rateLimit({
   windowMs: 60 * 1000,
-  max: 5,
+  max: 30,
   standardHeaders: true,
   legacyHeaders: false
 });
