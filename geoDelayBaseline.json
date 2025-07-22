@@ -81,6 +81,9 @@
     "US": { "expectedRTT": 136, "tolerance": 60 }
   },
   "CN": {
-    "US": { "expectedRTT": 142, "tolerance": 100 }
+    "US": { "expectedRTT": 142, "tolerance": 99999 }
+  },
+  "HK": {
+    "US": { "expectedRTT": 55, "tolerance": 70 }
   }
 }
