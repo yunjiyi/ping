@@ -5,11 +5,25 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 8080;
 
+// 🌐 CORS 允许两个指定域名访问
+const allowedOrigins = ["https://toolxp.com", "https://cti.pp.ua"];
+
+app.use((req, res, next) => {
+  const origin = req.headers.origin || "";
+  if (allowedOrigins.includes(origin)) {
+    res.setHeader("Access-Control-Allow-Origin", origin);
+    res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  }
+  next();
+});
+
+// 🛡️ Referer 验证（允许两个来源页面）
 app.get("/ping", (req, res) => {
   const referer = req.headers.referer || "";
-  const allowedReferer = process.env.ALLOWED_REFERER || "";
+  const allowedReferers = ["toolxp.com", "cti.pp.ua"];
+  const isValid = allowedReferers.some(r => referer.includes(r));
 
-  if (!referer.includes(allowedReferer)) {
+  if (!isValid) {
     return res.status(403).send("Forbidden");
   }
 
