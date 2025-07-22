@@ -6,7 +6,7 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 8080;
 
-// 🌐 CORS 限制：仅允许两个域名访问
+// 🌐 CORS 中间件：应最先运行，确保所有响应都带跨域头
 const allowedOrigins = ["https://toolxp.com", "https://cti.pp.ua"];
 app.use((req, res, next) => {
   const origin = req.headers.origin || "";
@@ -17,17 +17,16 @@ app.use((req, res, next) => {
   next();
 });
 
-// 🚧 IP限速中间件：每分钟最多请求10次
+// 🚧 限速中间件：应用于 /ping 路由，但在 CORS之后
 const limiter = rateLimit({
-  windowMs: 60 * 1000, // 每分钟
-  max: 10,             // 每 IP 最多10次请求
+  windowMs: 60 * 1000,
+  max: 10,
   standardHeaders: true,
   legacyHeaders: false
 });
-app.use("/ping", limiter); // 只作用于 /ping 路由
 
-// 🛡️ Referer校验：仅允许两个页面来源
-app.get("/ping", (req, res) => {
+// 🛡️ 路由定义：Referer校验 + 速率限制
+app.get("/ping", limiter, (req, res) => {
   const referer = req.headers.referer || "";
   const allowedReferers = ["toolxp.com", "cti.pp.ua"];
   const isValid = allowedReferers.some(r => referer.includes(r));
